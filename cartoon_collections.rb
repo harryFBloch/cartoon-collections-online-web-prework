@@ -25,7 +25,8 @@ end
 def find_the_cheese(array)
   cheese_types = ["cheddar", "gouda", "camembert"]
   cheesyString = array.select do |string| string == cheese_types[0] || string == cheese_types[1] || string == cheese_types[2]
-end.empty? and begin
+end
+array.empty? and begin
       return nil
     end
   cheesyString.join()
